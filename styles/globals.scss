@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./inter";
+
+@import "./components/hero";
+
+html {
+  @apply bg-isabelline;
+  @apply text-eerie-black;
+  &.dark {
+    @apply bg-eerie-black;
+    @apply text-isabelline;
+  }
+
+  font-family: "Inter";
+  @supports (font-variation-settings: normal) {
+    font-family: "Inter var";
+  }
+}
+
+.fade {
+  @apply transition-all duration-300;
+  &-start {
+    @apply opacity-0 translate-y-8;
+  }
+}
