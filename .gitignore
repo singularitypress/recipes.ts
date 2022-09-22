@@ -108,3 +108,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Markdown editing
+.obsidian
+
+# Settings
+.vscode

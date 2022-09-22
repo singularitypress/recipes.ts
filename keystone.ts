@@ -15,7 +15,7 @@ export default config(
       generateNextGraphqlAPI: true,
       generateNodeAPI: true,
     },
-    lists: { Post, User, Hero },
+    lists: { Post: Post("recipes"), User, Hero },
     session,
     ui: {
       isAccessAllowed: (context) => !!context.session?.data,
