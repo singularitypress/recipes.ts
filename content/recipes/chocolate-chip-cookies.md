@@ -16,7 +16,7 @@
 | all-purpose flour                      | 355 g                         |
 | baking powder                          | 1 1/2 tsp                     |
 | instant coffee/ espresso powder        | 1 tsp                         |
-| baking soda                            | 1tsp                          |
+| baking soda                            | 1 tsp                         |
 | salt                                   | 3/4 tsp                       |
 | unsalted butter, cubed, room temp      | 250 g                         |
 | granulated sugar                       | 175 g                         |
