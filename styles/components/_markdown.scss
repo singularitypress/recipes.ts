@@ -7,6 +7,10 @@
     @apply my-6;
   }
 
+  a {
+    @apply font-bold border-dotted border-b-2 border-b-eerie-black dark:border-b-isabelline hover:border-b-0;
+  }
+
   code {
     @apply text-fiery-rose;
   }
@@ -20,7 +24,7 @@
   }
 
   h1 {
-    @apply text-6xl mt-12 mb-4 leading-snug font-bold;
+    @apply text-6xl my-4 leading-snug font-bold;
   }
   h2 {
     @apply text-3xl mt-12 mb-4 leading-snug;
@@ -29,16 +33,31 @@
     @apply text-2xl mt-8 mb-4 leading-snug;
   }
   table {
-    @apply table-fixed;
+    @apply table-fixed border border-gray-300 dark:border-gray-700;
 
     thead {
+      tr {
+        @apply border-b border-b-gray-300 dark:border-b-gray-700;
+      }
       th {
         text-align: left;
+        @apply py-4 pl-4 border-r border-r-gray-300 dark:border-r-gray-700;
       }
     }
 
-    td {
-      @apply py-1 pr-8;
+    tbody {
+      tr {
+        @apply border-b border-b-gray-300 dark:border-b-gray-700 odd:bg-gray-300 dark:odd:bg-gray-700;
+        td {
+          @apply py-3 pr-8 pl-4 border-r border-r-gray-300 dark:border-r-gray-700;
+        }
+
+        &:first-child {
+          td {
+            @apply pt-4;
+          }
+        }
+      }
     }
   }
 }

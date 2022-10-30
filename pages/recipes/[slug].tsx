@@ -36,7 +36,20 @@ export default ({ post, content }: IProps) => {
         <title>{post.title}</title>
       </Head>
       <main>
-        <Container>
+        {post?.hero?.bgLight?.publicUrlTransformed && (
+          <picture>
+            <source
+              srcSet={post.hero.bgLight.publicUrlTransformed}
+              type="image/webp"
+            />
+            <img
+              className="w-screen h-screen md:h-96 object-cover"
+              src={post.hero.bgLight.publicUrlTransformed}
+              alt="sprinkles"
+            />
+          </picture>
+        )}
+        <Container className="mt-10">
           <div>
             <Link href="/">
               <a>&larr; back home</a>
